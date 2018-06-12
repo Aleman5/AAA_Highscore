@@ -6,14 +6,17 @@
 
 using namespace std;
 
+// Constant size of the Highscore, you can set it to the value you want
 const int tam = 10;
 
-enum Arrangement{
+enum Arrangement
+{
 	maxToMin,
 	minToMax
 };
 
-struct Score {
+struct Score
+{
 	string name;
 	int score;
 };
@@ -64,7 +67,7 @@ public:
 	void clearScores();
 
 	/**
-		Shows the data of an specific position of the Highscore. Remember that Highscore has 10 positions [0-9]
+		Shows the data of an specific position of the Highscore. Remember that Highscore has the same positions as 'tam'
 
 		@pos is the position of the Highscore to get the data
 		@name is the name of the Player
